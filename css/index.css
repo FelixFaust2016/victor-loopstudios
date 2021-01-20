@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+:root {
+  /* Colors */
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+
+  /* Fonts */
+  --font-one: "Alata", sans-serif;
+  --font-two: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}

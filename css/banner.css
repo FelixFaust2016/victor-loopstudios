@@ -1,0 +1,38 @@
+#banner {
+  position: relative;
+  width: calc(100% - 300px);
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/desktop/image-hero.jpg");
+  background-size: cover;
+  padding: 0px 150px;
+  background-attachment: fixed;
+}
+
+#banner div {
+  width: 50%;
+  border: 2px solid var(--White);
+  padding: 30px 30px;
+  font-size: 70px;
+  font-family: var(--font-two);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: var(--White);
+  position: relative;
+  top: 60%;
+  left: 0;
+  transform: translate(-0%, -60%);
+}
+
+@media (max-width: 1000px) {
+  #banner {
+    padding: 30px 20px;
+    width: calc(100% - 40px);
+    background-size: cover;
+    background-position: center;
+  }
+  #banner div {
+    width: calc(100% - 60px);
+    font-size: 50px;
+  }
+}

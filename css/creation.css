@@ -1,0 +1,143 @@
+#creation {
+  width: calc(100% - 300px);
+  padding: 20px 150px;
+}
+#creation nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#creation nav button {
+  padding: 7px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--Black);
+  background-color: transparent;
+  border: 2px solid var(--Very-Dark-Gray);
+  font-family: var(--font-one);
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  outline: none;
+  display: block;
+}
+#creation nav button:hover {
+  background-color: var(--Very-Dark-Gray);
+  color: var(--White);
+  /* border: none; */
+}
+#creation nav button:active {
+  transform: scale(1.05);
+}
+
+.creation-grid {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+.card {
+  width: 240px;
+  height: 400px;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-size: contain;
+  overflow: hidden;
+}
+/* .card:nth-child(1) {
+  background: url("../images/desktop/image-deep-earth.jpg");
+}
+.card:nth-child(2) {
+  background: url("../images/desktop/image-night-arcade.jpg");
+}
+.card:nth-child(3) {
+  background: url("../images/desktop/image-soccer-team.jpg");
+}
+.card:nth-child(4) {
+  background: url("../images/desktop/image-grid.jpg");
+}
+.card:nth-child(5) {
+  background: url("../images/desktop/image-from-above.jpg");
+}
+.card:nth-child(6) {
+  background: url("../images/desktop/image-pocket-borealis.jpg");
+}
+.card:nth-child(7) {
+  background: url("../images/desktop/image-curiosity.jpg");
+}
+.card:nth-child(8) {
+  background: url("../images/desktop/image-fisheye.jpg");
+} */
+.card img {
+  transition: 0.2s ease-in-out;
+  transform: scale(1);
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.card:hover.card img {
+  transform: scale(1.1);
+}
+.card p {
+  color: var(--White);
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  font-size: 30px;
+  font-family: var(--font-two);
+  text-transform: uppercase;
+  width: 180px;
+}
+.btn-class {
+  display: none;
+  margin: 0px auto;
+}
+@media (max-width: 1000px) {
+  #creation {
+    padding: 20px 20px;
+    width: calc(100% - 40px);
+    margin: 40px 0px;
+  }
+  #creation .card {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    position: relative;
+  }
+  #creation nav {
+    justify-content: center;
+  }
+  #creation nav p {
+    text-align: center;
+  }
+  #creation nav button {
+    display: none;
+  }
+  .btn-class {
+    display: block;
+    padding: 7px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--Black);
+    background-color: transparent;
+    border: 2px solid var(--Very-Dark-Gray);
+    font-family: var(--font-one);
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    outline: none;
+  }
+  .creation-grid {
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,123 @@
+#navigation {
+  width: calc(100% - 300px);
+  padding: 50px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: absolute;
+  z-index: 2;
+}
+
+#navigation ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  position: absolute;
+}
+
+#navigation ul li {
+  margin-right: 30px;
+  color: var(--White);
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: var(--font-one);
+  cursor: pointer;
+}
+/* #navigation ul li::after {
+  content: "";
+  height: 2px;
+  width: 2px;
+  background-color: white;
+  margin: 2px auto;
+  display: block;
+}
+#navigation ul li:hover #navigation ul li::after {
+  width: 100%;
+} */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #navigation {
+    padding: 30px 20px;
+    width: calc(100% - 40px);
+    
+  }
+  /* #nav {
+    position: sticky;
+    top: 0;
+  } */
+  .logo {
+    z-index: 5;
+    /* margin-top: 20px;
+    margin-right: 10px; */
+  }
+  #navigation ul {
+    display: block;
+    margin-top: 40%;
+    /* position: absolute; */
+  }
+  #navigation ul li {
+    font-family: var(--font-two);
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: var(--Dark-Gray);
+  }
+  .menu {
+    position: fixed;
+    z-index: 4;
+    height: 100vh;
+    left: 0px;
+    top: -120%;
+    width: 100vw;
+    background-color: black;
+    transition: 0.3s ease-in;
+  }
+  .men {
+    top: 0%;
+  }
+  .ham-cont {
+    z-index: 5;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+  }
+  .ham {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+  }
+  .ham::before,
+  .ham::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+  }
+  .ham::before {
+    transform: translateY(-7px);
+  }
+  .ham::after {
+    transform: translateY(7px);
+  }
+  .open .ham {
+    background-color: transparent;
+  }
+  .open .ham::before {
+    transform: rotate(45deg) ;
+  }
+  .open .ham::after {
+    transform: rotate(-45deg) ;
+  }
+}
